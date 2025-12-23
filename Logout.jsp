@@ -1,0 +1,21 @@
+<%-- 
+    Document   : Logout
+    Created on : 06-Oct-2025, 1:38:33 pm
+    Author     : surje
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <%
+        session.invalidate();
+        response.sendRedirect("index.html");
+        %>
+        <h1>Hello World!</h1>
+    </body>
+</html>
